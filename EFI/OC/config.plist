@@ -192,20 +192,10 @@
 			<dict>
 				<key>AAPL,ig-platform-id</key>
 				<data>AwDImw==</data>
-				<key>device-id</key>
-				<data>mD4AAA==</data>
-				<key>#device-id</key>
-				<data>xZsAAA==</data>
-				<key>framebuffer-fbmem</key>
-				<data>AACQAA==</data>
-				<key>framebuffer-patch-enable</key>
-				<data>AQAAAA==</data>
-				<key>framebuffer-stolenmem</key>
-				<data>AAAwAQ==</data>
 				<key>igfxfw</key>
 				<data>AgAAAA==</data>
-				<key>model</key>
-				<string>Intel UHD Graphics 630</string>
+				<key>rps-control</key>
+				<data>AQAAAA==</data>
 			</dict>
 			<key>#PciRoot(0x0)/Pci(0x1B,0x4)/Pci(0x0,0x0)/Pci(0x2,0x0)/Pci(0x0,0x0)</key>
 			<dict>
