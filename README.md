@@ -64,7 +64,7 @@ Hackintosh - AsRock Z490 Phantom Gaming ITX/TB3 - intel Core 10850k - OpenCorePk
 - [x] **Wi-Fi**和**Bluetooth**(通过**DW 1820A**无线卡)
 - [x] 声卡**Realtek ALC1220**(**layout-id=28 or 29**)
 - [x] 网卡**Realtek RTL8125BG**
-- [x] **Thunderbolt 3**支持热拔插（**Thunderbolt 3**设备树未显示也可以正常使用）
+- [x] **Thunderbolt 3**支持热拔插（未加载**Thunderbolt 3**总线也可以正常使用）
 - [x] 睡眠
 
 ### 其它设置
@@ -74,14 +74,14 @@ Hackintosh - AsRock Z490 Phantom Gaming ITX/TB3 - intel Core 10850k - OpenCorePk
 ![节能](Docs/IMG_0004.png)
 ![Realtek RTL8125B-CG](Docs/IMG_0005.png)
 
-### 加载**Thunderbolt 3**设备树
+### 加载**Thunderbolt 3**总线
 ![Thunderbolt 3](Docs/IMG_0006.png)
   
 - 刷入**ASRock-itx_tb3-NVM50-E64Fr-CSJ-dgsga.bin**需要使用编程器（取下芯片才能刷入），建议去找电脑维修的专业人士进行操作。
  - 存储**Thunderbolt**固件芯片位置见下图，芯片型号为**MXIC MX 25L8006E**
   ![Thunderbolt 3](Docs/IMG_0007.png)
 
-- 存在问题：刷入**ASRock-itx_tb3-NVM50-E64Fr-CSJ-dgsga.bin**固件加载**Thunderbolt 3**设备树后会导致**WIN10**下 **Thunderbolt 3**无法驱动！刷前请一定要备份！！！
+- 存在问题：刷入**ASRock-itx_tb3-NVM50-E64Fr-CSJ-dgsga.bin**固件加载**Thunderbolt 3**总线后会导致**WIN10**下 **Thunderbolt 3**无法驱动！刷前请一定要备份！！！
 
 ### 感谢
 
