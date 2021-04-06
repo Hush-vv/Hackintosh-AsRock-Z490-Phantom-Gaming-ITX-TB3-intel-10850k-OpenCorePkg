@@ -60,7 +60,7 @@ Hackintosh - AsRock Z490 Phantom Gaming ITX/TB3 - intel Core 10850k - OpenCorePk
 
 ### 正常工作
 
-- [x] **USB**已通过**USBPorts.kext**定制全部**USB**端口，无需重复定制。
+- [x] **USB**已通过**USBMap.kext**定制全部**USB**端口，无需重复定制。
 - [x] **Wi-Fi**和**Bluetooth**(通过**DW 1820A**无线卡)
 - [x] 声卡**Realtek ALC1220**(**layout-id=28 or 29**)
 - [x] 网卡**Realtek RTL8125BG**
