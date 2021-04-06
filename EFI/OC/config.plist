@@ -396,7 +396,7 @@
 				<key>Arch</key>
 				<string>x86_64</string>
 				<key>BundlePath</key>
-				<string>USBPorts.kext</string>
+				<string>USBMap.kext</string>
 				<key>Comment</key>
 				<string>Injects USB-port configuration for Z490 AsRock Phantom Gaming ITX/TB3</string>
 				<key>Enabled</key>

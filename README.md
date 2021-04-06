@@ -54,9 +54,9 @@ Hackintosh - AsRock Z490 Phantom Gaming ITX/TB3 - intel Core 10850k - OpenCorePk
 
 - 默认 **iMac20,2**
 
-  - 使用其它机型**SMBIOS**时请修改**USBPorts.kext**-**Contents**-**Info.plist**
+  - 使用其它机型**SMBIOS**时请修改**USBMap.kext**-**Contents**-**Info.plist**
   
-  ![USBPorts.kext](Docs/IMG_0001.png)
+  ![USBMap.kext](Docs/IMG_0001.png)
 
 ### 正常工作
 
