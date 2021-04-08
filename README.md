@@ -17,6 +17,7 @@ Hackintosh - AsRock Z490 Phantom Gaming ITX/TB3 - intel Core 10850k - OpenCorePk
 |网卡| ~~Intel AX201NGW~~ 更换为 DW 1820A |
 |SMBIOS| iMac20,2 |
 
+![UI](Docs/IMG_0008.png)
 ![SMBIOS](Docs/IMG_0000.png)
 
 ## 使用说明
