@@ -11,7 +11,7 @@ Hackintosh - AsRock Z490 Phantom Gaming ITX/TB3 - intel Core 10850k - OpenCorePk
 |处理器| Intel Core 10850k |
 |内存| G.SKILL 皇家戟 DDR4 16G×2 3200Mhz |
 |硬盘| WD_BLACK SN750 1TB x 2 |
-|显卡| Intel UHD Graphics 630 / Sapphire RX 560 |
+|显卡| Intel UHD Graphics 630 / Sapphire RX 5500XT |
 |显示器| ViewSonic VX2780 Series 4K |
 |声卡| Realtek ALC1220 |
 |网卡| ~~Intel AX201NGW~~ 更换为 DW 1820A |
@@ -74,6 +74,22 @@ Hackintosh - AsRock Z490 Phantom Gaming ITX/TB3 - intel Core 10850k - OpenCorePk
 ![蓝牙](Docs/IMG_0003.png)
 ![节能](Docs/IMG_0004.png)
 ![Realtek RTL8125B-CG](Docs/IMG_0005.png)
+
+### 显卡性能提升
+
+![显卡](Docs/IMG_0009.png)
+- **SSDT-AMD Radeon Pro W5500X.aml**AMD Radeon性能增强SSDT，相同显卡可开启
+
+- **请使用GPU-Z**查看显卡的**The board ID**并替换SSDT中的**ATY,Rom#** **ATY,EFIVersionB**值
+![请使用GPU-Z](Docs/IMG_0010.png)
+- 如果感觉到卡顿，修改**SSDT-AMD Radeon Pro W5500X.aml**里有**ATY,Python**的值，把**Python**替换为**Boa**, 5500 XT 基本就是这两个值
+
+- AMD NAVI 核心显卡 PP_PhmSoftPowerPlayTable 参数
+ - [`获取PP_PhmSoftPowerPlayTable参数生成方式`](https://github.com/huijiewei/ASRock-Z390m-ITX-ac-Opencore/blob/master/Resources/5500XT/README.md)
+ 
+ -  将获得的原始数据贴进**Hex Fiend.app**工具然后直接保存成文件。使用终端运行ResourceConverter.sh -a +文件路径就完事（借着ResourceConverter 把十六进制转成 ASL Buffer）
+ 
+- 显卡性能提升也可以使用**DeviceProperties**注入
 
 ### 加载**Thunderbolt 3**总线
 ![Thunderbolt 3](Docs/IMG_0006.png)
