@@ -8,14 +8,6 @@
 		<array>
 			<dict>
 				<key>Comment</key>
-				<string>Required for Thunderbolt 3 Hot Plug support</string>
-				<key>Enabled</key>
-				<false/>
-				<key>Path</key>
-				<string>SSDT-DTGP.aml</string>
-			</dict>
-			<dict>
-				<key>Comment</key>
 				<string>Enables native CPU Power Management</string>
 				<key>Enabled</key>
 				<true/>
@@ -40,22 +32,6 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>Enables Thunderbolt 3 Hot Plug</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Path</key>
-				<string>SSDT-TB3HP.aml</string>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>Improves SMBus Support</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Path</key>
-				<string>SSDT-SBUS-MCHC.aml</string>
-			</dict>
-			<dict>
-				<key>Comment</key>
 				<string>SSDT-PMCR.aml</string>
 				<key>Enabled</key>
 				<true/>
@@ -69,6 +45,30 @@
 				<true/>
 				<key>Path</key>
 				<string>SSDT-DWAK.aml</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Improves SMBus Support</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>SSDT-SBUS-MCHC.aml</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Required for Thunderbolt 3 Hot Plug support</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>SSDT-DTGP.aml</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Enables Thunderbolt 3 Hot Plug</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>SSDT-TB3HP.aml</string>
 			</dict>
 			<dict>
 				<key>Comment</key>
