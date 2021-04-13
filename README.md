@@ -79,16 +79,16 @@ Hackintosh - AsRock Z490 Phantom Gaming ITX/TB3 - intel Core 10850k - OpenCorePk
 
 ![显卡](Docs/IMG_0009.png)
 ![LuxMark](Docs/IMG_0011.png)
-- **SSDT-AMD Radeon Pro W5500X.aml**AMD Radeon性能增强SSDT，相同显卡可开启
+- **SSDT-AMD Radeon Pro W5500X.aml**AMD Radeon性能增强SSDT（需要配合**SSDT-DTGP.aml**一起使用），相同显卡可开启
 
 - **请使用GPU-Z**查看显卡的**The board ID**并替换SSDT中的**ATY,Rom#** **ATY,EFIVersionB**值
 ![请使用GPU-Z](Docs/IMG_0010.png)
 - 如果感觉到卡顿，修改**SSDT-AMD Radeon Pro W5500X.aml**里有**ATY,Python**的值，把**Python**替换为**Boa**, 5500 XT 基本就是这两个值
 
 - AMD NAVI 核心显卡 PP_PhmSoftPowerPlayTable 参数
-  - [`获取PP_PhmSoftPowerPlayTable参数生成方式`](https://github.com/huijiewei/ASRock-Z390m-ITX-ac-Opencore/blob/master/Resources/5500XT/README.md)
+   - [`获取PP_PhmSoftPowerPlayTable参数生成方式`](https://github.com/huijiewei/ASRock-Z390m-ITX-ac-Opencore/blob/master/Resources/5500XT/README.md)
  
-  -  将获得的原始数据贴进**Hex Fiend.app**工具然后直接保存成文件。使用终端运行ResourceConverter.sh -a +文件路径就完事（借着ResourceConverter 把十六进制转成 ASL Buffer）
+   -  将获得的原始数据贴进**Hex Fiend.app**工具然后直接保存成文件。使用终端运行ResourceConverter.sh -a +文件路径就完事（借着ResourceConverter 把十六进制转成 ASL Buffer）
   ![Hex Fiend](Docs/IMG_0012.png)
   
  - 显卡性能提升也可以使用**DeviceProperties**注入
