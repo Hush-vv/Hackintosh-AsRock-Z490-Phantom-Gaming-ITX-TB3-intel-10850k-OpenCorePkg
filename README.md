@@ -7,7 +7,7 @@ Hackintosh - AsRock Z490 Phantom Gaming ITX/TB3 - intel Core 10850k - OpenCorePk
 |规格 | 详细信息|
 |:-: | :-:|
 |主板| AsRock Z490 Phantom Gaming ITX/TB3 |
-|操作系统| **macOS** Big Sur 11.2.2|
+|操作系统| **macOS** Big Sur 11.3 (20E232)|
 |处理器| Intel Core 10850k |
 |内存| G.SKILL 皇家戟 DDR4 16G×2 3200Mhz |
 |硬盘| WD_BLACK SN750 1TB x 2 |
@@ -56,12 +56,13 @@ Hackintosh - AsRock Z490 Phantom Gaming ITX/TB3 - intel Core 10850k - OpenCorePk
 - 默认 **iMac20,2**
 
   - 使用其它机型**SMBIOS**时请修改**USBMap.kext**-**Contents**-**Info.plist**
-  
+
   ![USBMap.kext](Docs/IMG_0001.png)
 
 ### 正常工作
 
 - [x] **USB**已通过**USBMap.kext**定制全部**USB**端口，无需重复定制。
+   - 更新**Big Sur 11.3** 后**XhciPortLimit**已失效，请自行删除不需要的USB端口控制在15个以内
 - [x] **Wi-Fi**和**Bluetooth**(通过**DW 1820A**无线卡)
 - [x] 声卡**Realtek ALC1220**(**layout-id=28 or 29**)
 - [x] 网卡**Realtek RTL8125BG**
