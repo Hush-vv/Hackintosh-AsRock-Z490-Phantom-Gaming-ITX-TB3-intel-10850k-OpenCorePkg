@@ -74,7 +74,6 @@ Hackintosh - AsRock Z490 Phantom Gaming ITX/TB3 - intel Core 10850k - OpenCorePk
 ![Hackintool](Docs/IMG_0002.png)
 ![蓝牙](Docs/IMG_0003.png)
 ![节能](Docs/IMG_0004.png)
-![Realtek RTL8125B-CG](Docs/IMG_0005.png)
 
 ### 显卡性能提升
 
