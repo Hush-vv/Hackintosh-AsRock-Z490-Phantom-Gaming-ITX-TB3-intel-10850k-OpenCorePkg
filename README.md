@@ -7,10 +7,10 @@ Hackintosh - AsRock Z490 Phantom Gaming ITX/TB3 - intel Core 10850k - OpenCorePk
 |规格 | 详细信息|
 |:-: | :-:|
 |主板| AsRock Z490 Phantom Gaming ITX/TB3 |
-|操作系统| **macOS** Big Sur 11.3 (20E232)|
+|操作系统| **macOS** Big Sur 11.3.1 (20E241) |
 |处理器| Intel Core 10850k |
-|内存| G.SKILL 皇家戟 DDR4 16G×2 3200Mhz |
-|硬盘| WD_BLACK SN750 1TB x 2 |
+|内存| ￼￼阿斯加特（Asgard）DDR4 32GBx2  2666Mhz（OC 3000Mhz C16-18-18-38） 洛极51℃灰|
+|硬盘| WD_BLACK SN750 1TB x 2 / ￼￼WD_BLACK 黑盘 1TB SATA6Gb/s 7200转64M x 1 |
 |显卡| Intel UHD Graphics 630 / Sapphire RX 5500XT |
 |显示器| ViewSonic VX2780 Series 4K |
 |声卡| Realtek ALC1220 |
@@ -80,7 +80,7 @@ Hackintosh - AsRock Z490 Phantom Gaming ITX/TB3 - intel Core 10850k - OpenCorePk
 ![LuxMark](Docs/IMG_0011.png)
 - **SSDT-AMD Radeon Pro W5500X.aml**AMD Radeon性能增强SSDT（需要配合**SSDT-DTGP.aml**一起使用），相同显卡可开启
 
-   -  此**ssdt**使用**MorePowerTool**将**GPU**超频至**2000M**、**显存**超频至**1860M**、解**功耗墙**至**250瓦**、**电压1270mv**
+   -  此**ssdt**使用**MorePowerTool**将**GPU**超频至**2100M**、**显存**超频至**1800M**、解**功耗墙**至**250瓦**、**电压1270mv**
    
 - **请使用GPU-Z**查看显卡的**The board ID**并替换SSDT中的**ATY,Rom#** **ATY,EFIVersionB**值
 ![请使用GPU-Z](Docs/IMG_0010.png)
