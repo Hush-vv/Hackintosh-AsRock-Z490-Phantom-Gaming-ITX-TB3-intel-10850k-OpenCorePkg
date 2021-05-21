@@ -7,9 +7,9 @@ Hackintosh - AsRock Z490 Phantom Gaming ITX/TB3 - intel Core 10850k - OpenCorePk
 |规格 | 详细信息|
 |:-: | :-:|
 |主板| AsRock Z490 Phantom Gaming ITX/TB3 |
-|操作系统| **macOS** Big Sur 11.3.1 (20E241) |
+|操作系统| **macOS** Big Sur 11.4 (20F71) |
 |处理器| Intel Core 10850k |
-|内存| ￼￼阿斯加特（Asgard）DDR4 32GBx2  2666Mhz（OC 3000Mhz C16-18-18-38） 洛极51℃灰|
+|内存| ￼￼G.SKILL 皇家戟 DDR4 16G×2 3200Mhz （OC 3800Mhz C18-22-22-42）|
 |硬盘| WD_BLACK SN750 1TB x 2 / ￼￼WD_BLACK 黑盘 1TB SATA6Gb/s 7200转64M x 1 |
 |显卡| Intel UHD Graphics 630 / Sapphire RX 5500XT |
 |显示器| ViewSonic VX2780 Series 4K |
@@ -23,7 +23,7 @@ Hackintosh - AsRock Z490 Phantom Gaming ITX/TB3 - intel Core 10850k - OpenCorePk
 
 ### BISO设置
 
- - **BIOS**版本：**v1.50**
+ - **BIOS**版本：**v1.60**
  
    - **Adanced** \ **Chipset Configuration**-> **Above 4G Decoding**:**Enabled**
   
