@@ -478,13 +478,13 @@
 				<key>Arch</key>
 				<string>x86_64</string>
 				<key>BundlePath</key>
-				<string>AirportBrcmFixup.kext/Contents/PlugIns/BrcmBluetoothInjector.kext</string>
+				<string>AirportBrcmFixup.kext/Contents/PlugIns/BlueToolFixup.kext</string>
 				<key>Comment</key>
 				<string>BrcmBluetooth</string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
-				<string></string>
+				<string>Contents/MacOS/BlueToolFixup</string>
 				<key>MaxKernel</key>
 				<string></string>
 				<key>MinKernel</key>
