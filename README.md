@@ -65,7 +65,7 @@ Hackintosh - AsRock Z490 Phantom Gaming ITX/TB3 - intel Core 10850k - OpenCorePk
   - **macOS** 10.11 - 11 需要使用**BrcmBluetoothInjector.kext**驱动**Bluetooth**
   - **macOS** Monterey 12.0下需要使用**BlueToolFixup.kext**驱动**Bluetooth**（默认）
   
-  ### FakeSMC.kext
+### FakeSMC.kext
   
 - **FakeSMC.kext**用于检测AMD显卡温度，按需使用（默认**VirtualSMC.kext**只能使用其中之一）
   
