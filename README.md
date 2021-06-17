@@ -58,17 +58,24 @@ Hackintosh - AsRock Z490 Phantom Gaming ITX/TB3 - intel Core 10850k - OpenCorePk
 
   ![USBMap.kext](Docs/IMG_0001.png)
   
-  ### Bluetooth
+### Bluetooth
   
-  - 驱动**Bluetooth**根据系统版本二选一，其它**kext**不变
+- 驱动**Bluetooth**根据系统版本二选一，其它**kext**不变
   
-    - **macOS** Big Sur 11下需要使用**BrcmBluetoothInjector.kext**驱动**Bluetooth**
-    - **macOS** Monterey 12.0下需要使用**BlueToolFixup.kext**驱动**Bluetooth**（默认）
+  - **macOS** 10.11 - 11 需要使用**BrcmBluetoothInjector.kext**驱动**Bluetooth**
+  - **macOS** Monterey 12.0下需要使用**BlueToolFixup.kext**驱动**Bluetooth**（默认）
+  
+  ### FakeSMC.kext
+  
+- **FakeSMC.kext**用于检测AMD显卡温度，按需使用（默认**VirtualSMC.kext**只能使用其中之一）
+  
+  ![config](Docs/IMG_0013.png)
+  
+  ![显卡温度](Docs/IMG_0014.png)
   
 ### 正常工作
 
 - [x] **USB**已通过**USBMap.kext**定制全部**USB**端口，无需重复定制。
-   - **Big Sur 11.3** 下**XhciPortLimit**已失效，请自行删除不需要的USB端口控制在15个以内
 - [x] **Wi-Fi**和**Bluetooth**(通过**DW 1820A**无线卡)
 - [x] 声卡**Realtek ALC1220**(**layout-id=28 or 29**)
 - [x] 网卡**Realtek RTL8125BG**
