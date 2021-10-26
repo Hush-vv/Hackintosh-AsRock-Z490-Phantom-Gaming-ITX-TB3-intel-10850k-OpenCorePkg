@@ -74,7 +74,7 @@
 				<key>Comment</key>
 				<string>AMD Radeon Performance Enhanced SSDT</string>
 				<key>Enabled</key>
-				<false/>
+				<true/>
 				<key>Path</key>
 				<string>SSDT-AMD Radeon Pro W5500X.aml</string>
 			</dict>
@@ -99,6 +99,10 @@
 		<key>Patch</key>
 		<array>
 			<dict>
+				<key>Base</key>
+				<string></string>
+				<key>BaseSkip</key>
+				<integer>0</integer>
 				<key>Comment</key>
 				<string>_E2C to GPEE</string>
 				<key>Count</key>
@@ -125,6 +129,10 @@
 				<data>RFNEVA==</data>
 			</dict>
 			<dict>
+				<key>Base</key>
+				<string></string>
+				<key>BaseSkip</key>
+				<integer>0</integer>
 				<key>Comment</key>
 				<string>Replace one byte sequence with another</string>
 				<key>Count</key>
@@ -249,6 +257,8 @@
 			<integer>0</integer>
 			<key>RebuildAppleMemoryMap</key>
 			<false/>
+			<key>ResizeAppleGpuBars</key>
+			<integer>-1</integer>
 			<key>SetupVirtualMap</key>
 			<true/>
 			<key>SignalAppleOS</key>
@@ -283,6 +293,8 @@
 			<dict>
 				<key>AAPL,ig-platform-id</key>
 				<data>AwDImw==</data>
+				<key>device-id</key>
+				<data>xZsAAA==</data>
 				<key>igfxfw</key>
 				<data>AgAAAA==</data>
 				<key>rps-control</key>
@@ -648,7 +660,7 @@
 			<key>CustomSMBIOSGuid</key>
 			<false/>
 			<key>DisableIoMapper</key>
-			<true/>
+			<false/>
 			<key>DisableLinkeditJettison</key>
 			<true/>
 			<key>DisableRtcChecksum</key>
@@ -676,7 +688,7 @@
 			<key>ThirdPartyDrives</key>
 			<false/>
 			<key>XhciPortLimit</key>
-			<false/>
+			<true/>
 		</dict>
 		<key>Scheme</key>
 		<dict>
@@ -721,7 +733,7 @@
 			<key>TakeoffDelay</key>
 			<integer>0</integer>
 			<key>Timeout</key>
-			<integer>2</integer>
+			<integer>5</integer>
 		</dict>
 		<key>Debug</key>
 		<dict>
@@ -789,14 +801,16 @@
 			<data></data>
 			<key>PasswordSalt</key>
 			<data></data>
-			<key>#ScanPolicy</key>
-			<integer>0</integer>
 			<key>ScanPolicy</key>
 			<integer>3080963</integer>
 			<key>SecureBootModel</key>
-			<string>Disabled</string>
+			<string>j185f</string>
 			<key>Vault</key>
 			<string>Optional</string>
+			<key>#ScanPolicy</key>
+			<integer>0</integer>
+			<key>#SecureBootModel</key>
+			<string>Disabled</string>
 		</dict>
 		<key>Tools</key>
 		<array>
@@ -932,6 +946,37 @@
 		<true/>
 		<key>CustomMemory</key>
 		<false/>
+		<key>DataHub</key>
+		<dict>
+			<key>ARTFrequency</key>
+			<integer>0</integer>
+			<key>BoardProduct</key>
+			<string>Mac-AF89B6D9451A490B</string>
+			<key>BoardRevision</key>
+			<data>AQ==</data>
+			<key>DevicePathsSupported</key>
+			<integer>0</integer>
+			<key>FSBFrequency</key>
+			<integer>0</integer>
+			<key>InitialTSC</key>
+			<integer>0</integer>
+			<key>PlatformName</key>
+			<string></string>
+			<key>SmcBranch</key>
+			<data></data>
+			<key>SmcPlatform</key>
+			<data>ajE4NWYAAAA=</data>
+			<key>SmcRevision</key>
+			<data></data>
+			<key>StartupPowerEvents</key>
+			<integer>0</integer>
+			<key>SystemProductName</key>
+			<string>iMac20,2</string>
+			<key>SystemSerialNumber</key>
+			<string>C02C10X5046M</string>
+			<key>SystemUUID</key>
+			<string>49B386FF-22FF-48D9-884A-034B09CDFEC0</string>
+		</dict>
 		<key>Generic</key>
 		<dict>
 			<key>AdviseFeatures</key>
@@ -939,11 +984,11 @@
 			<key>MaxBIOSVersion</key>
 			<false/>
 			<key>MLB</key>
-			<string>C02051200QX0000AD</string>
+			<string>C02953207GU0000UE</string>
 			<key>ProcessorType</key>
 			<integer>0</integer>
 			<key>ROM</key>
-			<data>qXFtVkTk</data>
+			<data>W+gIOQY+</data>
 			<key>SpoofVendor</key>
 			<true/>
 			<key>SystemMemoryStatus</key>
@@ -951,9 +996,83 @@
 			<key>SystemProductName</key>
 			<string>iMac20,2</string>
 			<key>SystemSerialNumber</key>
-			<string>C02DV0VK046M</string>
+			<string>C02C10X5046M</string>
 			<key>SystemUUID</key>
-			<string>9BAC82D3-A5FC-46BC-B5B2-768B4F5644E4</string>
+			<string>49B386FF-22FF-48D9-884A-034B09CDFEC0</string>
+		</dict>
+		<key>PlatformNVRAM</key>
+		<dict>
+			<key>BID</key>
+			<string></string>
+			<key>FirmwareFeatures</key>
+			<data>dvWP/QgAAAA=</data>
+			<key>FirmwareFeaturesMask</key>
+			<data>f//f/wgAAAA=</data>
+			<key>MLB</key>
+			<string>C02953207GU0000UE</string>
+			<key>ROM</key>
+			<data>W+gIOQY+</data>
+			<key>SystemSerialNumber</key>
+			<string></string>
+			<key>SystemUUID</key>
+			<string></string>
+		</dict>
+		<key>SMBIOS</key>
+		<dict>
+			<key>BIOSReleaseDate</key>
+			<string>09/05/2021</string>
+			<key>BIOSVendor</key>
+			<string></string>
+			<key>BIOSVersion</key>
+			<string>1715.40.12.0.0</string>
+			<key>BoardAssetTag</key>
+			<string>Base Board Asset Tag</string>
+			<key>BoardLocationInChassis</key>
+			<string>Part Component</string>
+			<key>BoardManufacturer</key>
+			<string></string>
+			<key>BoardProduct</key>
+			<string>Mac-AF89B6D9451A490B</string>
+			<key>BoardSerialNumber</key>
+			<string>C02953207GU0000UE</string>
+			<key>BoardType</key>
+			<integer>10</integer>
+			<key>BoardVersion</key>
+			<string>iMac20,2</string>
+			<key>ChassisAssetTag</key>
+			<string>Asset Tag#</string>
+			<key>ChassisManufacturer</key>
+			<string></string>
+			<key>ChassisSerialNumber</key>
+			<string>C02C10X5046M</string>
+			<key>ChassisType</key>
+			<integer>13</integer>
+			<key>ChassisVersion</key>
+			<string>Mac-AF89B6D9451A490B</string>
+			<key>FirmwareFeatures</key>
+			<data>dvWP/QgAAAA=</data>
+			<key>FirmwareFeaturesMask</key>
+			<data>f//f/wgAAAA=</data>
+			<key>PlatformFeature</key>
+			<integer>32</integer>
+			<key>ProcessorType</key>
+			<integer>0</integer>
+			<key>SmcVersion</key>
+			<data></data>
+			<key>SystemFamily</key>
+			<string>iMac</string>
+			<key>SystemManufacturer</key>
+			<string></string>
+			<key>SystemProductName</key>
+			<string>iMac20,2</string>
+			<key>SystemSKUNumber</key>
+			<string>System SKU#</string>
+			<key>SystemSerialNumber</key>
+			<string>C02C10X5046M</string>
+			<key>SystemUUID</key>
+			<string>49B386FF-22FF-48D9-884A-034B09CDFEC0</string>
+			<key>SystemVersion</key>
+			<string>1.0</string>
 		</dict>
 		<key>UpdateDataHub</key>
 		<true/>
@@ -1109,17 +1228,17 @@
 			<key>AppleImageConversion</key>
 			<false/>
 			<key>AppleImg4Verification</key>
-			<true/>
+			<false/>
 			<key>AppleKeyMap</key>
 			<false/>
 			<key>AppleRtcRam</key>
 			<false/>
 			<key>AppleSecureBoot</key>
-			<true/>
-			<key>AppleSmcIo</key>
 			<false/>
-			<key>AppleUserInterfaceTheme</key>
+			<key>AppleSmcIo</key>
 			<true/>
+			<key>AppleUserInterfaceTheme</key>
+			<false/>
 			<key>DataHub</key>
 			<false/>
 			<key>DeviceProperties</key>
@@ -1155,6 +1274,8 @@
 			<false/>
 			<key>RequestBootVarRouting</key>
 			<true/>
+			<key>ResizeGpuBars</key>
+			<integer>-1</integer>
 			<key>TscSyncTimeout</key>
 			<integer>0</integer>
 			<key>UnblockFsConnect</key>
