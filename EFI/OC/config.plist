@@ -78,6 +78,14 @@
 				<key>Path</key>
 				<string>SSDT-AMD Radeon Pro W5500X.aml</string>
 			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>AMD Radeon Performance Enhanced SSDT</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>SSDT-AMD Radeon 6600XT.aml</string>
+			</dict>
 		</array>
 		<key>Delete</key>
 		<array>
@@ -553,6 +561,24 @@
 				<true/>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/BrcmPatchRAM3</string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
+			<dict>
+				<key>Arch</key>
+				<string>x86_64</string>
+				<key>BundlePath</key>
+				<string>RadeonSensor.kext</string>
+				<key>Comment</key>
+				<string>RadeonSensor</string>
+				<key>Enabled</key>
+				<false/>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/RadeonSensor</string>
 				<key>MaxKernel</key>
 				<string></string>
 				<key>MinKernel</key>
