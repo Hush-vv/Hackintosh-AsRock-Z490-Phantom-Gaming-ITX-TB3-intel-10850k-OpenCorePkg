@@ -7,11 +7,11 @@ Hackintosh - AsRock Z490 Phantom Gaming ITX/TB3 - intel Core 10850k - OpenCorePk
 |规格 | 详细信息|
 |:-: | :-:|
 |主板| AsRock Z490 Phantom Gaming ITX/TB3 |
-|操作系统| **macOS** Monterey 12.0.1 (21A559) |
+|操作系统| **macOS** Monterey 12.1 Beta版(21C5021h) |
 |处理器| Intel Core 10850k |
 |内存| G.SKILL 皇家戟 DDR4 16G×2 3200Mhz （OC 3800Mhz C18-22-22-42）|
 |硬盘| WD_BLACK SN750 1TB x 2 / WD_BLACK 黑盘 1TB SATA6Gb/s 7200转64M x 1 |
-|显卡| Intel UHD Graphics 630 / Sapphire RX 5500XT |
+|显卡| Intel UHD Graphics 630 / Sapphire RX 6600XT |
 |显示器| ViewSonic VX2780 Series 4K |
 |声卡| Realtek ALC1220 |
 |网卡| ~~Intel AX201NGW~~ 更换为 DW 1820A |
@@ -96,10 +96,17 @@ Hackintosh - AsRock Z490 Phantom Gaming ITX/TB3 - intel Core 10850k - OpenCorePk
    - [`获取PP_PhmSoftPowerPlayTable参数生成方式`](https://github.com/huijiewei/ASRock-Z390m-ITX-ac-Opencore/blob/master/Resources/5500XT/README.md)
  
    -  将获得的原始数据贴进**Hex Fiend.app**工具然后直接保存成文件。使用终端运行ResourceConverter.sh -a +文件路径就完事（借着ResourceConverter 把十六进制转成 ASL Buffer）
-  ![Hex Fiend](Docs/IMG_0012.png)
-  
- - 显卡性能提升也可以使用**DeviceProperties**注入
+   
+ ![Hex Fiend](Docs/IMG_0012.png) 
 
+ - 显卡性能提升也可以使用**DeviceProperties**注入 
+ 
+ ### Sapphire RX 6600XT
+ 
+ ![显卡1](Docs/IMG_0013.png)
+ ![显卡2](Docs/IMG_0014.png)
+ ![显卡3](Docs/IMG_0015.png)
+ 
 ### 加载**Thunderbolt 3**总线
 ![Thunderbolt 3](Docs/IMG_0006.png)
   
