@@ -101,11 +101,15 @@ Hackintosh - AsRock Z490 Phantom Gaming ITX/TB3 - intel Core 10850k - OpenCorePk
 
  - 显卡性能提升也可以使用**DeviceProperties**注入 
  
- ### Sapphire RX 6600XT
+### Sapphire RX 6600XT
  
  ![显卡1](Docs/IMG_0013.png)
  ![显卡2](Docs/IMG_0014.png)
  ![显卡3](Docs/IMG_0015.png)
+ 
+### AMD Radeon显卡温度工具**RadeonSensor**
+ 
+ - [`RadeonSensor说明`](https://github.com/aluveitie/RadeonSensor)
  
 ### 加载**Thunderbolt 3**总线
 ![Thunderbolt 3](Docs/IMG_0006.png)
@@ -118,7 +122,7 @@ Hackintosh - AsRock Z490 Phantom Gaming ITX/TB3 - intel Core 10850k - OpenCorePk
 
 ### 感谢
 
-- [`Acidanther`](https://github.com/acidanthera)项目
+- [`Acidanther`](https://github.com/acidanthera) 项目
 
 - [`SchmockLord`](https://github.com/SchmockLord/Hackintosh-Intel-i9-10900k-AsRock-Z490-Phantom-ITX-TB3)
 
