@@ -84,7 +84,7 @@
 				<key>Enabled</key>
 				<false/>
 				<key>Path</key>
-				<string>SSDT-AMD Radeon 6600XT.aml</string>
+				<string>SSDT-AMD Radeon RX 6600XT.aml</string>
 			</dict>
 		</array>
 		<key>Delete</key>
