@@ -7,14 +7,14 @@ Hackintosh - AsRock Z490 Phantom Gaming ITX/TB3 - intel Core 10850k - OpenCorePk
 |规格 | 详细信息|
 |:-: | :-:|
 |主板| AsRock Z490 Phantom Gaming ITX/TB3 |
-|操作系统| **macOS** Monterey 12.1 Beta版(21C5021h) |
+|操作系统| **macOS** Monterey 12.2 Beta版(21D5025f) |
 |处理器| Intel Core 10850k |
 |内存| G.SKILL 皇家戟 DDR4 16G×2 3200Mhz （OC 3800Mhz C18-22-22-42）|
 |硬盘| WD_BLACK SN750 1TB x 2 / WD_BLACK 黑盘 1TB SATA6Gb/s 7200转64M x 1 |
 |显卡| Intel UHD Graphics 630 / Sapphire RX 6600XT |
 |显示器| ViewSonic VX2780 Series 4K |
 |声卡| Realtek ALC1220 |
-|网卡| ~~Intel AX201NGW~~ 更换为 DW 1820A |
+|网卡| ~~Intel AX201NGW~~ 更换为 BCM943602CS |
 |SMBIOS| iMac20,2 |
 
 ![SMBIOS](Docs/IMG_0000.png)
@@ -48,7 +48,14 @@ Hackintosh - AsRock Z490 Phantom Gaming ITX/TB3 - intel Core 10850k - OpenCorePk
    - **Adanced** \ **USB Configuration**-> **Legacy USB Support**:**UEFI Setup Only**
   
    - **Boot** \ **CSM(Compatibility Support Module)**-> **CSM**:**Disabled**
+   
+   - **Adanced** \ **ACPI Configuration**-> **Suspend to RAM**:**Auto**  
+   
+   - **Adanced** \ **ACPI Configuration**-> **PS/2 Keyboard S4/S5 Wakeup Support**:**Any Key**  
+   
+   - **Adanced** \ **ACPI Configuration**-> **USB Keyboard/Remote Power On**:**Enabled**  
   
+   - **Adanced** \ **ACPI Configuration**-> **USB Mouse Power On**:**Enabled**  
 
 ### SMBIOS
 
@@ -68,11 +75,11 @@ Hackintosh - AsRock Z490 Phantom Gaming ITX/TB3 - intel Core 10850k - OpenCorePk
 ### 正常工作
 
 - [x] **USB**已通过**USBMap.kext**定制全部**USB**端口，无需重复定制。
-- [x] **Wi-Fi**和**Bluetooth**(通过**DW 1820A**无线卡)
+- [x] **Wi-Fi**和**Bluetooth**(通过**BCM94360CS2**无线卡)
 - [x] 声卡**Realtek ALC1220**(**layout-id=28 or 29**)
 - [x] 网卡**Realtek RTL8125BG**
 - [x] **Thunderbolt 3**支持热拔插（未加载**Thunderbolt 3**总线也可以正常使用）
-- [x] 睡眠
+- [x] 睡眠（支持USB键盘唤醒）
 
 ### 其它设置
 
