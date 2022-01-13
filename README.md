@@ -65,21 +65,14 @@ Hackintosh - AsRock Z490 Phantom Gaming ITX/TB3 - intel Core 10850k - OpenCorePk
 
   ![USBMap.kext](Docs/IMG_0001.png)
   
-### Bluetooth
-  
-- 驱动**Bluetooth**根据系统版本二选一，其它**kext**不变
-  
-  - **macOS** 10.11 - 11 需要使用**BrcmBluetoothInjector.kext**驱动**Bluetooth**
-  - **macOS** Monterey 12.0下需要使用**BlueToolFixup.kext**驱动**Bluetooth**（默认）
-
 ### 正常工作
 
 - [x] **USB**已通过**USBMap.kext**定制全部**USB**端口，无需重复定制。
-- [x] **Wi-Fi**和**Bluetooth**(通过**BCM94360CS2**无线卡)
+- [x] **Wi-Fi**和**Bluetooth**(通过**BCM94360CS2**无线卡)支持隔空、接力、随航、个人热点
 - [x] 声卡**Realtek ALC1220**(**layout-id=28 or 29**)
 - [x] 网卡**Realtek RTL8125BG**
 - [x] **Thunderbolt 3**支持热拔插（未加载**Thunderbolt 3**总线也可以正常使用）
-- [x] 睡眠（支持USB键盘唤醒）
+- [x] 睡眠（支持USB唤醒）
 
 ### 其它设置
 
@@ -91,7 +84,7 @@ Hackintosh - AsRock Z490 Phantom Gaming ITX/TB3 - intel Core 10850k - OpenCorePk
 
 ![显卡](Docs/IMG_0009.png)
 ![LuxMark](Docs/IMG_0011.png)
-- **SSDT-AMD Radeon Pro W5500X.aml**AMD Radeon性能增强SSDT（需要配合**SSDT-DTGP.aml**一起使用），相同显卡可开启
+- **SSDT-AMD Radeon Pro W5500X.aml**AMD Radeon RX5500XT性能增强SSDT（需要配合**SSDT-DTGP.aml**一起使用），相同显卡可开启
 
    -  此**ssdt**使用**MorePowerTool**将**GPU**超频至**2100M**、**显存**超频至**1800M**、解**功耗墙**至**250瓦**、**电压1270mv**
    
@@ -109,7 +102,10 @@ Hackintosh - AsRock Z490 Phantom Gaming ITX/TB3 - intel Core 10850k - OpenCorePk
  - 显卡性能提升也可以使用**DeviceProperties**注入 
  
 ### Sapphire RX 6600XT
- 
+- **SSDT-AMD Radeon RX 6600XT.aml**AMD Radeon RX 6600XT性能增强SSDT（需要配合**SSDT-DTGP.aml**一起使用），相同显卡可开启
+
+   -  此**ssdt**使用**MorePowerTool** **显存**超频至**2250M**、解**功耗墙**至**250瓦**
+   
  ![显卡1](Docs/IMG_0013.png)
  ![显卡2](Docs/IMG_0014.png)
  ![显卡3](Docs/IMG_0015.png)
