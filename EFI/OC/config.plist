@@ -40,14 +40,6 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>SSDT-GPRW</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Path</key>
-				<string>SSDT-GPRW.aml</string>
-			</dict>
-			<dict>
-				<key>Comment</key>
 				<string>Improves SMBus Support</string>
 				<key>Enabled</key>
 				<true/>
@@ -74,7 +66,15 @@
 				<key>Comment</key>
 				<string>AMD Radeon Performance Enhanced SSDT</string>
 				<key>Enabled</key>
-				<true/>
+				<false/>
+				<key>Path</key>
+				<string>SSDT-AMD Radeon Pro W5500X.aml</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>AMD Radeon Performance Enhanced SSDT</string>
+				<key>Enabled</key>
+				<false/>
 				<key>Path</key>
 				<string>SSDT-AMD Radeon RX 6600XT.aml</string>
 			</dict>
@@ -106,66 +106,6 @@
 		</array>
 		<key>Patch</key>
 		<array>
-			<dict>
-				<key>Base</key>
-				<string></string>
-				<key>BaseSkip</key>
-				<integer>0</integer>
-				<key>Comment</key>
-				<string>GPRW to XPRW</string>
-				<key>Count</key>
-				<integer>0</integer>
-				<key>Enabled</key>
-				<true/>
-				<key>Find</key>
-				<data>R1BSVwI=</data>
-				<key>Limit</key>
-				<integer>0</integer>
-				<key>Mask</key>
-				<data></data>
-				<key>OemTableId</key>
-				<data></data>
-				<key>Replace</key>
-				<data>WFBSVwI=</data>
-				<key>ReplaceMask</key>
-				<data></data>
-				<key>Skip</key>
-				<integer>0</integer>
-				<key>TableLength</key>
-				<integer>0</integer>
-				<key>TableSignature</key>
-				<data></data>
-			</dict>
-			<dict>
-				<key>Base</key>
-				<string></string>
-				<key>BaseSkip</key>
-				<integer>0</integer>
-				<key>Comment</key>
-				<string>_E2C to GPEE</string>
-				<key>Count</key>
-				<integer>0</integer>
-				<key>Enabled</key>
-				<false/>
-				<key>Find</key>
-				<data>X0UyQw==</data>
-				<key>Limit</key>
-				<integer>0</integer>
-				<key>Mask</key>
-				<data></data>
-				<key>OemTableId</key>
-				<data></data>
-				<key>Replace</key>
-				<data>R1BFRQ==</data>
-				<key>ReplaceMask</key>
-				<data></data>
-				<key>Skip</key>
-				<integer>0</integer>
-				<key>TableLength</key>
-				<integer>0</integer>
-				<key>TableSignature</key>
-				<data>RFNEVA==</data>
-			</dict>
 			<dict>
 				<key>Base</key>
 				<string></string>
@@ -624,7 +564,7 @@
 				<key>Comment</key>
 				<string>RadeonSensor</string>
 				<key>Enabled</key>
-				<true/>
+				<false/>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/RadeonSensor</string>
 				<key>MaxKernel</key>
@@ -642,7 +582,7 @@
 				<key>Comment</key>
 				<string>RadeonSensor</string>
 				<key>Enabled</key>
-				<true/>
+				<false/>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/SMCRadeonGPU</string>
 				<key>MaxKernel</key>
@@ -968,6 +908,8 @@
 				<integer>0</integer>
 				<key>SystemAudioVolume</key>
 				<data>Rg==</data>
+				<key>SystemAudioVolumeDB</key>
+				<data>4g==</data>
 				<key>boot-args</key>
 				<string>agdpmod=pikera -v</string>
 				<key>csr-active-config</key>
@@ -1200,9 +1142,15 @@
 			<key>GraphicsInputMirroring</key>
 			<true/>
 			<key>KeyInitialDelay</key>
-			<integer>0</integer>
+			<integer>50</integer>
 			<key>KeySubsequentDelay</key>
 			<integer>5</integer>
+			<key>PointerPollMask</key>
+			<integer>-1</integer>
+			<key>PointerPollMax</key>
+			<integer>80</integer>
+			<key>PointerPollMin</key>
+			<integer>10</integer>
 			<key>PointerSpeedDiv</key>
 			<integer>1</integer>
 			<key>PointerSpeedMul</key>
@@ -1214,20 +1162,24 @@
 			<integer>0</integer>
 			<key>AudioDevice</key>
 			<string>PciRoot(0x0)/Pci(0x1F,0x3)</string>
-			<key>AudioOut</key>
-			<integer>3</integer>
+			<key>AudioOutMask</key>
+			<integer>1</integer>
 			<key>AudioSupport</key>
-			<true/>
-			<key>MinimumVolume</key>
-			<integer>20</integer>
+			<false/>
+			<key>DisconnectHda</key>
+			<false/>
+			<key>MaximumGain</key>
+			<integer>-15</integer>
+			<key>MinimumAssistGain</key>
+			<integer>-30</integer>
+			<key>MinimumAudibleGain</key>
+			<integer>-55</integer>
 			<key>PlayChime</key>
 			<string>Auto</string>
 			<key>ResetTrafficClass</key>
 			<false/>
 			<key>SetupDelay</key>
 			<integer>0</integer>
-			<key>VolumeAmplifier</key>
-			<integer>143</integer>
 		</dict>
 		<key>ConnectDrivers</key>
 		<true/>
