@@ -53,9 +53,9 @@ Hackintosh - AsRock Z490 Phantom Gaming ITX/TB3 - intel Core 10850k - OpenCorePk
    
    - **Adanced** \ **ACPI Configuration**-> **PS/2 Keyboard S4/S5 Wakeup Support**:**Any Key**  
    
-   - **Adanced** \ **ACPI Configuration**-> **USB Keyboard/Remote Power On**:**Enabled**  
+   - **Adanced** \ **ACPI Configuration**-> **USB Keyboard/Remote Power On**:**Disabled**  
   
-   - **Adanced** \ **ACPI Configuration**-> **USB Mouse Power On**:**Enabled**  
+   - **Adanced** \ **ACPI Configuration**-> **USB Mouse Power On**:**Disabled**  
 
 ### SMBIOS
 
