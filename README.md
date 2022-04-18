@@ -84,7 +84,7 @@ Hackintosh - AsRock Z490 Phantom Gaming ITX/TB3 - intel Core 10850k - OpenCorePk
 
 ![显卡](Docs/IMG_0009.png)
 ![LuxMark](Docs/IMG_0011.png)
-- **SSDT-AMD Radeon Pro W5500X.aml**AMD Radeon RX5500XT性能增强SSDT（需要配合**SSDT-DTGP.aml**一起使用），相同显卡可开启
+- **SSDT-AMD Radeon Pro W5500X.aml**AMD Radeon RX5500XT性能增强SSDT，相同显卡可开启
 
    -  此**ssdt**使用**MorePowerTool**将**GPU**超频至**2100M**、**显存**超频至**1800M**、解**功耗墙**至**250瓦**、**电压1270mv**
    
@@ -102,10 +102,10 @@ Hackintosh - AsRock Z490 Phantom Gaming ITX/TB3 - intel Core 10850k - OpenCorePk
  - 显卡性能提升也可以使用**DeviceProperties**注入 
  
 ### Sapphire Radeon RX 6600XT
-- **SSDT-AMD Radeon Pro W6600X.aml**AMD Radeon RX 6600XT性能增强SSDT（需要配合**SSDT-DTGP.aml** **AGPMInjector.kext**一起使用），相同显卡可开启
+- **SSDT-AMD Radeon Pro W6600X.aml **AMD Radeon RX 6600XT性能增强SSDT（需要配合**AGPMInjector.kext**一起使用），相同显卡可开启
 
    -  此**ssdt**使用**MorePowerTool** **显存**超频至**2250M**、解**功耗墙**至**250瓦**
-   
+   -  **AGPMInjector.kext**在使用其它机型**SMBIOS**时请修改**AGPMInjector.kext**-**Contents**-**Info.plist**
  ![显卡1](Docs/IMG_0013.png)
  ![显卡2](Docs/IMG_0014.png)
  ![显卡3](Docs/IMG_0015.png)
