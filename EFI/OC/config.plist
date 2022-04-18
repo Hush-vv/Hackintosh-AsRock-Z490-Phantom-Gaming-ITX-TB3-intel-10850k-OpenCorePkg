@@ -8,43 +8,11 @@
 		<array>
 			<dict>
 				<key>Comment</key>
-				<string>Fixes AWAC system clock</string>
+				<string>SSDT-OC-Merge</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
-				<string>SSDT-AWAC.aml</string>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>Enables native CPU Power Management</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Path</key>
-				<string>SSDT-PLUG.aml</string>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>EC and USB-power</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Path</key>
-				<string>SSDT-EC-USBX.aml</string>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>SSDT-PMCR.aml</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Path</key>
-				<string>SSDT-PMCR.aml</string>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>Improves SMBus Support</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Path</key>
-				<string>SSDT-SBUS-MCHC.aml</string>
+				<string>SSDT-OC-Merge.aml</string>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -77,14 +45,6 @@
 				<false/>
 				<key>Path</key>
 				<string>SSDT-AMD Radeon Pro W6600X.aml</string>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>Needed for the USBWakeFixup.kext to fix the issue, that it takes two keystrikes to wakeup the display, if you wakeup your PC with the keyboard.</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Path</key>
-				<string>SSDT-USBW.aml</string>
 			</dict>
 		</array>
 		<key>Delete</key>
@@ -275,7 +235,7 @@
 				<data>xZsAAA==</data>
 				<key>igfxfw</key>
 				<data>AgAAAA==</data>
-				<key>rps-control</key>
+				<key>#rps-control</key>
 				<data>AQAAAA==</data>
 			</dict>
 		</dict>
@@ -626,6 +586,8 @@
 				<string></string>
 				<key>MinKernel</key>
 				<string></string>
+				<key>Strategy</key>
+				<string>Disable</string>
 			</dict>
 		</array>
 		<key>Emulate</key>
@@ -707,6 +669,8 @@
 			<false/>
 			<key>AppleXcpmForceBoost</key>
 			<false/>
+			<key>CustomPciSerialDevice</key>
+			<false/>
 			<key>CustomSMBIOSGuid</key>
 			<false/>
 			<key>DisableIoMapper</key>
@@ -718,6 +682,8 @@
 			<key>ExtendBTFeatureFlags</key>
 			<true/>
 			<key>ExternalDiskIcons</key>
+			<false/>
+			<key>ForceAquantiaEthernet</key>
 			<false/>
 			<key>ForceSecureBootScheme</key>
 			<false/>
@@ -797,8 +763,6 @@
 			<integer>0</integer>
 			<key>DisplayLevel</key>
 			<integer>2147483650</integer>
-			<key>SerialInit</key>
-			<false/>
 			<key>SysReport</key>
 			<false/>
 			<key>Target</key>
@@ -861,6 +825,13 @@
 			<integer>0</integer>
 			<key>#SecureBootModel</key>
 			<string>Disabled</string>
+		</dict>
+		<key>Serial</key>
+		<dict>
+			<key>Init</key>
+			<false/>
+			<key>Override</key>
+			<false/>
 		</dict>
 		<key>Tools</key>
 		<array>
