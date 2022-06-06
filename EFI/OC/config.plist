@@ -791,12 +791,8 @@
 		</array>
 		<key>Security</key>
 		<dict>
-			<key>AllowNvramReset</key>
-			<true/>
 			<key>AllowSetDefault</key>
 			<true/>
-			<key>AllowToggleSip</key>
-			<false/>
 			<key>ApECID</key>
 			<integer>0</integer>
 			<key>AuthRestart</key>
@@ -900,7 +896,7 @@
 				<key>boot-args</key>
 				<string>agdpmod=pikera -v</string>
 				<key>csr-active-config</key>
-				<data>5wsAAA==</data>
+				<data>fwAAAA==</data>
 				<key>prev-lang:kbd</key>
 				<data></data>
 				<key>run-efi-updater</key>
