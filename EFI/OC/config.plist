@@ -894,7 +894,7 @@
 				<key>SystemAudioVolume</key>
 				<data>Rg==</data>
 				<key>boot-args</key>
-				<string>agdpmod=pikera -v</string>
+				<string>agdpmod=pikera -v -alcbeta -lilubetaall</string>
 				<key>csr-active-config</key>
 				<data>fwAAAA==</data>
 				<key>prev-lang:kbd</key>
