@@ -77,8 +77,7 @@ Hackintosh - AsRock Z490 Phantom Gaming ITX/TB3 - intel Core 10850k - OpenCorePk
 
 ### **Ventura** 下不正常工作的
 
-- [x] 声卡**Realtek ALC1220**
-- [x] 第三方无线网卡 DW1560，DW1820a（白果拆机卡正常）
+- [x] 第三方无线网卡 DW1560，DW1820a、英特尔系列（白果拆机卡正常）
 
 ### 其它设置
 
