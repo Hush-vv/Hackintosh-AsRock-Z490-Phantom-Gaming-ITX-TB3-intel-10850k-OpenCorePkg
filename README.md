@@ -60,24 +60,89 @@ Hackintosh - AsRock Z490 Phantom Gaming ITX/TB3 - intel Core 10850k - OpenCorePk
   
 ### 正常工作
 
-- [x] **USB**已通过**SSDT-UIAC.aml**定制全部**USB**端口，无需重复定制。更换SMBIOS时无需其它设置。
 - [x] **Wi-Fi**和**Bluetooth**(通过**BCM94360CS2**无线卡)支持隔空、接力、随航、个人热点
 - [x] 声卡**Realtek ALC1220**(**layout-id=28 or 29**)
 - [x] 网卡**Realtek RTL8125BG**
 - [x] **Thunderbolt 3**支持热拔插（未加载**Thunderbolt 3**总线也可以正常使用）
 - [x] 睡眠（支持USB唤醒）
 
-
 ### **Ventura** 下不正常工作的
 
 - [x] 第三方无线网卡 DW1560，DW1820a、英特尔系列（白果拆机卡正常）
+
+### USB端口
+
+- [x] **USB**已通过**SSDT-UIAC.aml**定制全部**USB**端口，更换SMBIOS时无需其它设置。不需要的USB端口使用**Hackintool**删除后导出**SSDT-UIAC.aml**替换即可。
+
+<details>
+<summary><strong>EFI 文件内容</strong></summary>
+
+### EFI 文件内容
+
+```
+EFI
+├── BOOT
+│   └── BOOTx64.efi
+└── OC
+    ├── ACPI
+    │   ├── SSDT-OC-Merge.aml
+    │   ├── SSDT-UIAC.aml
+    │   ├── SSDT-DTGP.aml
+    │   ├── SSDT-TB3HP.aml
+    │   ├── SSDT-AMD Radeon Pro W5500X.aml
+    │   └── SSDT-AMD Radeon Pro W6600X.aml
+    ├── Drivers
+    │   ├── HfsPlus.efi
+    │   ├── OpenCanopy.efi
+    │   ├── OpenHfsPlus.efi
+    │   └── OpenRuntime.efi
+    ├── Kexts
+    │   ├── AGPMInjector.kext
+    │   ├── AirportBrcmFixup.kext
+    │   │   └── Contents
+    │   │       └── PlugIns
+    │   │           ├── AirPortBrcm4360_Injector.kext 
+    │   │           ├── AirPortBrcmNIC_Injector.kext 
+    │   │           ├── BlueToolFixup.kext
+    │   │           ├── BrcmBluetoothInjector.kext
+    │   │           ├── BrcmFirmwareData.kext
+    │   │           └── BrcmPatchRAM3.kext
+    │   ├── AppleALC.kext
+    │   ├── Lilu.kext
+    │   ├── LucyRTL8125Ethernet.kext
+    │   ├── RadeonSensor.kext
+    │   │   └── Contents
+    │   │       └── PlugIns
+    │   │           └── SMCRadeonGPU.kext    
+    │   ├── SMCProcessor.kext
+    │   ├── SMCSuperIO.kext
+    │   ├── USBInjectAll.kext
+    │   ├── USBWakeFixup.kext
+    │   ├── VirtualSMC.kext
+    │   └── WhateverGreen.kext
+    ├── OpenCore.efi
+    ├── Resources 
+    │   ├── Audio
+    │   ├── Font
+    │   ├── Image
+    │   └── Label
+    ├── config.plist
+    └── config-IGPU.plist
+```
+</details>
+<details>
+<summary><strong>其它设置</strong></summary>
 
 ### 其它设置
 
 ![Hackintool](Docs/IMG_0002.png)
 ![蓝牙](Docs/IMG_0003.png)
 ![节能](Docs/IMG_0004.png)
-
+ 
+### AMD Radeon显卡温度工具**RadeonSensor**
+ 
+ - [`RadeonSensor说明`](https://github.com/aluveitie/RadeonSensor)
+ 
 ### 显卡性能提升
 
 ![显卡](Docs/IMG_0009.png)
@@ -108,10 +173,6 @@ Hackintosh - AsRock Z490 Phantom Gaming ITX/TB3 - intel Core 10850k - OpenCorePk
  ![显卡2](Docs/IMG_0014.png)
  ![显卡3](Docs/IMG_0015.png)
  
-### AMD Radeon显卡温度工具**RadeonSensor**
- 
- - [`RadeonSensor说明`](https://github.com/aluveitie/RadeonSensor)
- 
 ### 加载**Thunderbolt 3**总线
 ![Thunderbolt 3](Docs/IMG_0006.png)
   
@@ -120,6 +181,8 @@ Hackintosh - AsRock Z490 Phantom Gaming ITX/TB3 - intel Core 10850k - OpenCorePk
   ![Thunderbolt 3](Docs/IMG_0007.png)
 
 - 存在问题：刷入**ASRock-itx_tb3-NVM50-E64Fr-CSJ-dgsga.bin**固件加载**Thunderbolt 3**总线后会导致**WIN10**下 **Thunderbolt 3**无法驱动！刷前请一定要备份！！！
+
+</details>
 
 ### 感谢
 
