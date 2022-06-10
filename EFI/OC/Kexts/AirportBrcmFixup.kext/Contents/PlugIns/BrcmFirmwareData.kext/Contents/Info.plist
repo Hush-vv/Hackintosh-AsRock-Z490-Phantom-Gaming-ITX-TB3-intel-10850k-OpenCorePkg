@@ -5,17 +5,17 @@
 	<key>BuildMachineOSBuild</key>
 	<string>20G624</string>
 	<key>CFBundleExecutable</key>
-	<string>BrcmFirmwareRepo</string>
+	<string>BrcmFirmwareData</string>
 	<key>CFBundleIdentifier</key>
 	<string>as.acidanthera.BrcmFirmwareStore</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
-	<string>BrcmFirmwareRepo</string>
+	<string>BrcmFirmwareData</string>
 	<key>CFBundlePackageType</key>
 	<string>KEXT</string>
 	<key>CFBundleShortVersionString</key>
-	<string>2.6.2</string>
+	<string>2.6.3</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleSupportedPlatforms</key>
@@ -23,7 +23,7 @@
 		<string>MacOSX</string>
 	</array>
 	<key>CFBundleVersion</key>
-	<string>2.6.2</string>
+	<string>2.6.3</string>
 	<key>DTCompiler</key>
 	<string>com.apple.compilers.llvm.clang.1_0</string>
 	<key>DTPlatformBuild</key>
@@ -57,7 +57,7 @@
 	<key>LSMinimumSystemVersion</key>
 	<string>10.8</string>
 	<key>OSBundleCompatibleVersion</key>
-	<string>2.6.2</string>
+	<string>2.6.3</string>
 	<key>OSBundleLibraries</key>
 	<dict>
 		<key>com.apple.kpi.iokit</key>
