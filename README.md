@@ -57,17 +57,10 @@ Hackintosh - AsRock Z490 Phantom Gaming ITX/TB3 - intel Core 10850k - OpenCorePk
   
    - **Adanced** \ **ACPI Configuration**-> **USB Mouse Power On**:**Disabled**  
 
-### SMBIOS
-
-- 默认 **iMac20,2**
-
-  - 使用其它机型**SMBIOS**时请修改**USBMap.kext**-**Contents**-**Info.plist**
-
-  ![USBMap.kext](Docs/IMG_0001.png)
   
 ### 正常工作
 
-- [x] **USB**已通过**USBMap.kext**定制全部**USB**端口，无需重复定制。
+- [x] **USB**已通过**SSDT-UIAC.aml**定制全部**USB**端口，无需重复定制。更换SMBIOS时无需其它设置。
 - [x] **Wi-Fi**和**Bluetooth**(通过**BCM94360CS2**无线卡)支持隔空、接力、随航、个人热点
 - [x] 声卡**Realtek ALC1220**(**layout-id=28 or 29**)
 - [x] 网卡**Realtek RTL8125BG**
