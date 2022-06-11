@@ -158,7 +158,7 @@
 			<key>AllowRelocationBlock</key>
 			<false/>
 			<key>AvoidRuntimeDefrag</key>
-			<false/>
+			<true/>
 			<key>DevirtualiseMmio</key>
 			<true/>
 			<key>DisableSingleUser</key>
