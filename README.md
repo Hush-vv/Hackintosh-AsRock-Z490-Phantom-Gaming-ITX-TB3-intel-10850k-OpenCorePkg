@@ -60,7 +60,7 @@ Hackintosh - AsRock Z490 Phantom Gaming ITX/TB3 - intel Core 10850k - OpenCorePk
   
 ### 正常工作
 
-- [x] **Wi-Fi**和**Bluetooth**(通过**BCM94360CS2**无线卡)支持隔空、接力、随航、个人热点
+- [x] **Wi-Fi**和**Bluetooth**(通过**BCM943602CS**无线卡)支持隔空、接力、随航、个人热点
 - [x] 声卡**Realtek ALC1220**(**layout-id=28 or 29**)
 - [x] 网卡**Realtek RTL8125BG**
 - [x] **Thunderbolt 3**支持热拔插（未加载**Thunderbolt 3**总线也可以正常使用）
