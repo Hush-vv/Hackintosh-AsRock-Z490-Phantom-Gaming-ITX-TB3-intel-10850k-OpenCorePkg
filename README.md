@@ -7,7 +7,7 @@ Hackintosh - AsRock Z490 Phantom Gaming ITX/TB3 - intel Core 10850k - OpenCorePk
 |规格 | 详细信息|
 |:-: | :-:|
 |主板| AsRock Z490 Phantom Gaming ITX/TB3 |
-|操作系统| **macOS** Ventura 13.0 Beta版(22A5352e) |
+|操作系统| **macOS** Ventura 13.2 (22D49) |
 |处理器| Intel Core 10850k / 10400 |
 |内存| G.SKILL 皇家戟 DDR4 16G×2 3200Mhz （OC 3800Mhz C18-22-22-42）|
 |硬盘| WD_BLACK SN750 1TB x 2 / WD_BLACK 黑盘 1TB SATA6Gb/s 7200转64M x 1 |
@@ -142,7 +142,8 @@ EFI
 ### AMD Radeon显卡温度工具**RadeonSensor**
  
  - [`RadeonSensor说明`](https://github.com/aluveitie/RadeonSensor)
- 
+   - Ventura 13.2 (22D49)无需加载 
+   
 ### 显卡性能提升
 
 ![显卡](Docs/IMG_0009.png)
