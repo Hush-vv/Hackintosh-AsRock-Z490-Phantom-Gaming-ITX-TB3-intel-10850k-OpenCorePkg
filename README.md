@@ -90,7 +90,8 @@ EFI
     │   ├── SSDT-DTGP.aml
     │   ├── SSDT-TB3HP.aml
     │   ├── SSDT-AMD Radeon Pro W5500X.aml
-    │   └── SSDT-AMD Radeon Pro W6600X.aml
+    │   ├── SSDT-AMD Radeon Pro W6600X.aml
+    │   └── SSDT-AMD Radeon Pro W5500X.aml
     ├── Drivers
     │   ├── HfsPlus.efi
     │   ├── OpenCanopy.efi
@@ -169,7 +170,7 @@ EFI
 - **SSDT-AMD Radeon Pro W6600X.aml **AMD Radeon RX 6600XT性能增强SSDT（需要配合**AGPMInjector.kext**一起使用），相同显卡可开启
 
    -  此**ssdt**使用**MorePowerTool** **显存**超频至**2250M**、解**功耗墙**至**250瓦**
-   -  **AGPMInjector.kext**在使用其它机型**SMBIOS**或者显卡设备ID不一样时请修改**AGPMInjector.kext**-**Contents**-**Info.plist**
+   -  **AGPMInjector.kext** 在使用其它机型**SMBIOS**或者显卡设备ID不一样时请修改**AGPMInjector.kext**-**Contents**-**Info.plist**
    
  ![显卡1](Docs/IMG_0013.png)
  ![显卡2](Docs/IMG_0014.png)
@@ -177,8 +178,8 @@ EFI
  
 ### 盈通（yeston）RX 6800XT 16GB GDDR6 樱瞳花嫁纪念版
 
-- **SSDT-AMD Radeon Pro W6800X.aml ** 仅解锁**功耗墙**至**300瓦** 并重命名为 **AMD Radeon Pro W6600X**需要配合**AGPMInjector.kext**一起使用
-    -  **AGPMInjector.kext**在使用其它机型**SMBIOS**或者显卡设备ID不一样时请修改**AGPMInjector.kext**-**Contents**-**Info.plist**
+- **SSDT-AMD Radeon Pro W6800X.aml ** 仅解锁 **功耗墙** 至 **300瓦**  并重命名为 **AMD Radeon Pro W6600X** 需要配合 **AGPMInjector.kext** 一起使用
+    -  **AGPMInjector.kext**在使用其它机型**SMBIOS**或者显卡设备ID不一样时请修改 **AGPMInjector.kext** - **Contents** - **Info.plist**
 
 ![显卡4](Docs/IMG_0016.png)
 ![显卡5](Docs/IMG_0017.png)
