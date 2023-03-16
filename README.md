@@ -7,11 +7,11 @@ Hackintosh - AsRock Z490 Phantom Gaming ITX/TB3 - intel Core 10850k - OpenCorePk
 |规格 | 详细信息|
 |:-: | :-:|
 |主板| AsRock Z490 Phantom Gaming ITX/TB3 |
-|操作系统| **macOS** Ventura 13.2 (22D49) |
-|处理器| Intel Core 10850k / 10400 |
+|操作系统| **macOS** Ventura 13.3 Beta版(22E5246b) |
+|处理器| Intel Core 10850k |
 |内存| G.SKILL 皇家戟 DDR4 16G×2 3200Mhz （OC 3800Mhz C18-22-22-42）|
 |硬盘| WD_BLACK SN750 1TB x 2 / WD_BLACK 黑盘 1TB SATA6Gb/s 7200转64M x 1 |
-|显卡| Intel UHD Graphics 630 / Sapphire RX 6600XT |
+|显卡| 盈通（yeston）RX 6800XT 16GB GDDR6 樱瞳花嫁纪念版 |
 |显示器| ViewSonic VX2780 Series 4K |
 |声卡| Realtek ALC1220 |
 |网卡| ~~Intel AX201NGW~~ 更换为 BCM943602CS |
@@ -116,6 +116,7 @@ EFI
     │   │           └── SMCRadeonGPU.kext    
     │   ├── SMCProcessor.kext
     │   ├── SMCSuperIO.kext
+    │   ├── USBAMD6800XT.kext   
     │   ├── USBInjectAll.kext
     │   ├── USBWakeFixup.kext
     │   ├── VirtualSMC.kext
@@ -142,7 +143,6 @@ EFI
 ### AMD Radeon显卡温度工具**RadeonSensor**
  
  - [`RadeonSensor说明`](https://github.com/aluveitie/RadeonSensor)
-   - Ventura 13.2 (22D49)无需加载 
    
 ### 显卡性能提升
 
@@ -169,10 +169,20 @@ EFI
 - **SSDT-AMD Radeon Pro W6600X.aml **AMD Radeon RX 6600XT性能增强SSDT（需要配合**AGPMInjector.kext**一起使用），相同显卡可开启
 
    -  此**ssdt**使用**MorePowerTool** **显存**超频至**2250M**、解**功耗墙**至**250瓦**
-   -  **AGPMInjector.kext**在使用其它机型**SMBIOS**时请修改**AGPMInjector.kext**-**Contents**-**Info.plist**
+   -  **AGPMInjector.kext**在使用其它机型**SMBIOS**或者显卡设备ID不一样时请修改**AGPMInjector.kext**-**Contents**-**Info.plist**
+   
  ![显卡1](Docs/IMG_0013.png)
  ![显卡2](Docs/IMG_0014.png)
  ![显卡3](Docs/IMG_0015.png)
+ 
+### 盈通（yeston）RX 6800XT 16GB GDDR6 樱瞳花嫁纪念版
+
+- **SSDT-AMD Radeon Pro W6800X.aml ** 仅解锁**功耗墙**至**300瓦** 并重命名为 **AMD Radeon Pro W6600X**需要配合**AGPMInjector.kext**一起使用
+    -  **AGPMInjector.kext**在使用其它机型**SMBIOS**或者显卡设备ID不一样时请修改**AGPMInjector.kext**-**Contents**-**Info.plist**
+
+![显卡4](Docs/IMG_0016.png)
+![显卡5](Docs/IMG_0017.png)
+![显卡6](Docs/IMG_0018.png)
  
 ### 加载**Thunderbolt 3**总线
 ![Thunderbolt 3](Docs/IMG_0006.png)
