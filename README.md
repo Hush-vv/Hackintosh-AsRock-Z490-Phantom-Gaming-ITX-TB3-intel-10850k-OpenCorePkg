@@ -91,7 +91,7 @@ EFI
     │   ├── SSDT-TB3HP.aml
     │   ├── SSDT-AMD Radeon Pro W5500X.aml
     │   ├── SSDT-AMD Radeon Pro W6600X.aml
-    │   └── SSDT-AMD Radeon Pro W5500X.aml
+    │   └── SSDT-AMD Radeon Pro W6800X.aml
     ├── Drivers
     │   ├── HfsPlus.efi
     │   ├── OpenCanopy.efi
@@ -129,6 +129,7 @@ EFI
     │   ├── Image
     │   └── Label
     ├── config.plist
+    ├── config6800xt.plist
     └── config-IGPU.plist
 ```
 </details>
