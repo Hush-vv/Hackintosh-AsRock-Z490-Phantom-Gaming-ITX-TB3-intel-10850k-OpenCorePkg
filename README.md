@@ -178,13 +178,13 @@ EFI
  
 ### 盈通（yeston）RX 6800XT 16GB GDDR6 樱瞳花嫁纪念版
 
-- **SSDT-AMD Radeon Pro W6800X.aml ** 仅解锁 **功耗墙** 至 **300瓦**  并重命名为 **AMD Radeon Pro W6600X** 需要配合 **AGPMInjector.kext** 一起使用
-    -  **AGPMInjector.kext**在使用其它机型**SMBIOS**或者显卡设备ID不一样时请修改 **AGPMInjector.kext** - **Contents** - **Info.plist**
-
+- **SSDT-AMD Radeon Pro W6800X.aml** 仅解锁 **功耗墙** 至 **300瓦**  **显存** 超频至 **2050M** 并重命名为 **AMD Radeon Pro W6600X** 需要配合 **AGPMInjector.kext** 一起使用
+    -  **AGPMInjector.kext**在使用其它机型**SMBIOS**或者显卡**设备ID**不一样时请修改 **AGPMInjector.kext** - **Contents** - **Info.plist**
+    
+![显卡6](Docs/IMG_0018.png)
 ![显卡4](Docs/IMG_0016.png)
 ![显卡5](Docs/IMG_0017.png)
-![显卡6](Docs/IMG_0018.png)
- 
+
 ### 加载**Thunderbolt 3**总线
 ![Thunderbolt 3](Docs/IMG_0006.png)
   
