@@ -68,11 +68,13 @@ Hackintosh - AsRock Z490 Phantom Gaming ITX/TB3 - intel Core 10850k - OpenCorePk
 
 ### **Ventura** 下不正常工作的
 
-- [x] 第三方无线网卡 DW1560，DW1820a、英特尔系列（白果拆机卡正常）
+- [x] **Bluetooth**睡眠唤醒后必抽风，系统bug无法解决
 
 ### USB端口
 
-- [x] **USB**已通过**SSDT-UIAC.aml**定制全部**USB**端口，更换SMBIOS时无需其它设置。不需要的USB端口使用**Hackintool**删除后导出**SSDT-UIAC.aml**替换即可。
+- [x] **USB**已通过**USBMap.kext**定制全部**USB**端口，更换SMBIOS时请修改**USBMap.kext** - **Contents** - **Contents** -**Info.plist** 
+
+ ![USB](Docs/IMG_0021.png)
 
 <details>
 <summary><strong>EFI 文件内容</strong></summary>
@@ -86,7 +88,6 @@ EFI
 └── OC
     ├── ACPI
     │   ├── SSDT-OC-Merge.aml
-    │   ├── SSDT-UIAC.aml
     │   ├── SSDT-DTGP.aml
     │   ├── SSDT-TB3HP.aml
     │   ├── SSDT-AMD Radeon Pro W5500X.aml
@@ -117,7 +118,7 @@ EFI
     │   │           └── SMCRadeonGPU.kext    
     │   ├── SMCProcessor.kext
     │   ├── SMCSuperIO.kext
-    │   ├── USBInjectAll.kext
+    │   ├── USBMap.kext
     │   ├── USBWakeFixup.kext
     │   ├── VirtualSMC.kext
     │   └── WhateverGreen.kext
